@@ -23,7 +23,7 @@ php -S localhost:8000 -t public
 Para iniciar o projeto usando Docker, execute:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 O serviço do banco de dados será iniciado automaticamente. As credenciais padrão são:
