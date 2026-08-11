@@ -1,1 +1,7 @@
 public/upload
+compose.lock
+/vendor/
+/.idea/
+/.agents/
+/.codex/
+.env

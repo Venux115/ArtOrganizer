@@ -20,15 +20,20 @@ php -S localhost:8000 -t public
 
 ## Uso com Docker
 
-Para iniciar o projeto usando Docker, execute:
+Crie o arquivo de ambiente a partir do exemplo e defina senhas seguras:
+
+```bash
+cp .env.example .env
+```
+
+Depois, inicie o projeto usando Docker:
 
 ```bash
 docker compose up -d
 ```
 
-O serviço do banco de dados será iniciado automaticamente. As credenciais padrão são:
-- Usuário: root
-- Senha: 123
+O serviço do banco de dados será iniciado automaticamente. As credenciais são
+definidas no arquivo `.env` e não devem ser versionadas.
 
 ## Contribuição
 

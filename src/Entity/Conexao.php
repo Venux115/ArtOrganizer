@@ -15,11 +15,11 @@ class  Conexao extends mysqli
 
     public function __construct()
     {
-        $this->hostname = "db";
-        $this->username = "root";
-        $this->password = "123";
-        $this->database = "artorganizer";
-        $this->port = "3306";
+        $this->hostname = getenv('DB_HOST') ?: 'db';
+        $this->username = getenv('DB_USER') ?: 'root';
+        $this->password = getenv('DB_PASSWORD') ?: '123';
+        $this->database = getenv('DB_NAME') ?: 'artorganizer';
+        $this->port = getenv('DB_PORT') ?: '3306';
 
         try {
             return parent::__construct($this->hostname, $this->username, $this->password, $this->database, $this->port);

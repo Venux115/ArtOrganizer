@@ -1,0 +1,11 @@
+.git
+.github
+.idea
+.agents
+.codex
+.env
+.env.*
+!.env.example
+vendor
+public/upload
+compose.lock
